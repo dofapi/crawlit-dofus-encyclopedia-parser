@@ -2,7 +2,9 @@ var express = require('express');
 var app = express();
 var cheerio = require('cheerio');
 var Horseman = require("node-horseman");
-var horseman = new Horseman();
+var horseman = new Horseman({
+        injectJquery: true
+    });
 var fs = require('fs');
 
 app.set('view engine', 'pug');
@@ -15,16 +17,39 @@ app.get('/', function(req, res, next) {
 	items = [];
 	pages.forEach((page) => {
 		var response;
-		const horseman = new Horseman();
+		//const horseman = new Horseman();
 		horseman
 			.open(url + '?page=' + page)
 			//.open(url)
 			.html('tbody')
+			.evaluate(function () {
+				var items = [];
+				//var test = $('tr:first').text();
+				$('tr:not(:first-child)').each(function(i, tr){
+					//items.push($(this).text());
+					var item = {
+						//rank: parseInt(rank),
+						title: $(this).find( "td:eq( 1 )" ).find('a').text(),
+						url: $(this).find( "td:eq( 0 )" ).find('a').attr('href'),
+						type: $(this).find( "td:eq( 3 )" ).text(),
+						lvl: $(this).find( "td:eq( 4 )" ).text()
+					};
+					$(this).find( "td:eq( 0 )" ).find('a').attr('href').click(function() {
+					  //items.push($(this).find( "div.ak-container.ak-content-list.ak-displaymode-col" ).html());
+					});
+					
+					items.push(item);
+				});
+				return items;
+				 //$('input[name="btnK"]').click();
+			})
+			.log()
 			.then((htmlRes) => {
 				response = htmlRes;
+				//console.log(response);
 				//fs.appendFileSync('crawled.txt', response);
 				//saveItem(response);
-				var $ = cheerio.load(response, {
+				/*var $ = cheerio.load(response, {
 					normalizeWhitespace: true
 				});
 				
@@ -32,7 +57,7 @@ app.get('/', function(req, res, next) {
 					console.log('Tr is working');
 					//saveItem($(this).html());
 				});
-				console.log(items);
+				console.log(items);*/
 			})
 			//.log()
 			.close();
