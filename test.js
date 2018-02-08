@@ -7,40 +7,51 @@ var horseman = new Horseman({
     });
 var fs = require('fs');
 
+/*
 app.set('view engine', 'pug');
 app.set('views', './views')
 app.get('/', function(req, res, next) {
+	//crawl();
+	res.render('index', { title: 'Success', message: 'Operation done !'});
+});
+
+app.listen(3000, function () {
+  console.log('Crawlit listening on port 3000!')
+});
+*/
+
+crawl();
+
+
+function crawl() {
 	var url = "http://www.dofus-touch.com/fr/mmorpg/encyclopedie/equipements";
-	//var url = "https://www.sosnoob.com/";
-	//https://github.com/johntitus/node-horseman/issues/256
 	const pages = [];
 	items = [];
 	var currentPage = 0;
-	for (var page = 1; page <= 2; page++) {
+	for (var page = 1; page <= 3; page++) {
 		currentPage ++;
 		var response;
-		//const horseman = new Horseman();
 		horseman
 			.open(url + '?page=' + page)
-			//.open(url)
 			.html('tbody')
 			.evaluate(function () {
-				var items = [];
 				var links = [];
-				//var test = $('tr:first').text();
 				$('tr').each(function(i, tr){
 					var link = 'http://www.dofus-touch.com' + $(this).find( "td:eq( 0 )" ).find('a').attr('href');
 					links.push(link);
 					//fs.appendFileSync('links.txt', link + '\n');					
 				});
 				links.shift();
+				console.log(links);
 				return links;
-				 //$('input[name="btnK"]').click();
 			})
-			//.log()
+			.log()
 			.then((htmlRes) => {
 				response = htmlRes;
-				console.log(response);
+				//console.log(response);
+				var file_name = 'links'+page+'.json';
+				fs.appendFileSync(file_name, JSON.stringify(response), 'utf8');
+				/*
 				if(currentPage == 1) {
 					fs.appendFileSync('links.json', JSON.stringify(response), 'utf8');
 				} else {
@@ -49,7 +60,7 @@ app.get('/', function(req, res, next) {
 					json.push(response)
 
 					fs.writeFile("links.json", JSON.stringify(json))
-				});*/
+				});
 					fs.readFile('links.json', 'utf8', function readFileCallback(err, data){
 						if (err){
 							console.log(err);
@@ -59,44 +70,14 @@ app.get('/', function(req, res, next) {
 						json = JSON.stringify(obj); //convert it back to json
 						fs.writeFile('links.json', json, 'utf8', callback); // write it back 
 					}});
-				}
+				}*/
 				
-				//fs.appendFileSync('links.json', JSON.stringify(response));
-				//saveItem(response);
-				/*var $ = cheerio.load(response, {
-					normalizeWhitespace: true
-				});
-				
-				$('tr').each(function(i, tr){
-					console.log('Tr is working');
-					//saveItem($(this).html());
-				});
-				console.log(items);*/
+				//fs.appendFileSync('links.json', JSON.stringify(response));*/
 			})
 			//.log()
-			.close();
-		
-		//$ = cheerio.load(response, {
-		//	normalizeWhitespace: true
-		//});
-		//console.log(`${htmlRes}`);
-		//$('tr[class="ak-bg-odd"]').each(function(i, tr){
-		//response = $(this).html();
-		//console.log(element.html());
-		//	console.log('Ca fonctionne');
-		//});
-		//response = `${htmlRes}`;
-		//console.log(response);
-		//$.html();		
+			.close();	
 	};
-	
-	res.render('index', { title: 'Success', message: 'Operation done !'});
-});
-
-app.listen(3000, function () {
-  console.log('Crawlit listening on port 3000!')
-})
-
+}
 
 
 function saveItem(item) {
