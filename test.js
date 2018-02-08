@@ -13,9 +13,11 @@ app.get('/', function(req, res, next) {
 	var url = "http://www.dofus-touch.com/fr/mmorpg/encyclopedie/equipements";
 	//var url = "https://www.sosnoob.com/";
 	//https://github.com/johntitus/node-horseman/issues/256
-	const pages = [3];
+	const pages = [];
 	items = [];
-	pages.forEach((page) => {
+	var currentPage = 0;
+	for (var page = 1; page <= 2; page++) {
+		currentPage ++;
 		var response;
 		//const horseman = new Horseman();
 		horseman
@@ -26,11 +28,12 @@ app.get('/', function(req, res, next) {
 				var items = [];
 				var links = [];
 				//var test = $('tr:first').text();
-				$('tr:not(:first-child)').each(function(i, tr){
-					link = 'http://www.dofus-touch.com' + $(this).find( "td:eq( 0 )" ).find('a').attr('href');
+				$('tr').each(function(i, tr){
+					var link = 'http://www.dofus-touch.com' + $(this).find( "td:eq( 0 )" ).find('a').attr('href');
 					links.push(link);
 					//fs.appendFileSync('links.txt', link + '\n');					
 				});
+				links.shift();
 				return links;
 				 //$('input[name="btnK"]').click();
 			})
@@ -38,12 +41,26 @@ app.get('/', function(req, res, next) {
 			.then((htmlRes) => {
 				response = htmlRes;
 				console.log(response);
-				fs.readFile('links.json', function (err, data) {
+				if(currentPage == 1) {
+					fs.appendFileSync('links.json', JSON.stringify(response), 'utf8');
+				} else {
+					/*fs.readFileSync('links.json', function (err, data) {
 					var json = JSON.parse(data)
 					json.push(response)
 
 					fs.writeFile("links.json", JSON.stringify(json))
-				})
+				});*/
+					fs.readFile('links.json', 'utf8', function readFileCallback(err, data){
+						if (err){
+							console.log(err);
+						} else {
+						obj = JSON.parse(data); //now it an object
+						obj.push(response); //add some data
+						json = JSON.stringify(obj); //convert it back to json
+						fs.writeFile('links.json', json, 'utf8', callback); // write it back 
+					}});
+				}
+				
 				//fs.appendFileSync('links.json', JSON.stringify(response));
 				//saveItem(response);
 				/*var $ = cheerio.load(response, {
@@ -71,7 +88,7 @@ app.get('/', function(req, res, next) {
 		//response = `${htmlRes}`;
 		//console.log(response);
 		//$.html();		
-	});
+	};
 	
 	res.render('index', { title: 'Success', message: 'Operation done !'});
 });
