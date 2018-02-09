@@ -15,7 +15,7 @@ function getItems() {
 		});
 	});
 	Promise.all(crawlers).then(values => { 
-		//console.log(values);
+		console.log(values);
 		fs.appendFileSync('items.json', JSON.stringify(values), 'utf8');
 		//gi.getItems();
 	});
@@ -31,22 +31,22 @@ function getData(url) {
 		.html('div.ak-encyclo-detail-right.ak-nocontentpadding')
 		.evaluate(function () {
 			var items = [];
+			var itemo;
 			$('div.ak-encyclo-detail-right.ak-nocontentpadding').find('div.ak-list-element').each(function(i, element){
-				//var test =$(this).find( "div.ak-title" ).text();
-				//console.log(test);
-				items.push($(this).find( "div.ak-title" ).text());				
+				itemo = $(this).find( "div.ak-title" ).text().trim();
+				var item = $(this).find( "div.ak-title" ).text().trim();
+				items.push(item);				
 			});
 			//links.shift();
-			console.log(items);
+			//console.log(items);
 			return items;
 		})
-		.log()
+		//.log()
 		.then((htmlRes) => {
 			//console.log(htmlRes);
 			resolve(htmlRes);
 		})
 		.close();
-		//resolve('Hello from getDataPromise');
 	});	
 }
 
