@@ -9,17 +9,14 @@ function getItems() {
 	var links = getLinksFromFile();
 	//console.log(obj);
 	links.forEach((urls) => {
-		//crawlers.push(getData(page));
 		urls.forEach((url) => {
 			crawlers.push(getData(url));
 		});
 	});
 	Promise.all(crawlers).then(values => { 
 		console.log(values);
-		fs.appendFileSync('items.json', JSON.stringify(values), 'utf8');
-		//gi.getItems();
+		//fs.appendFileSync('items.json', JSON.stringify(values), 'utf8');
 	});
-    //return Date();
 };
 
 function getData(url) {
@@ -30,16 +27,26 @@ function getData(url) {
 		.open(url)
 		.html('div.ak-encyclo-detail-right.ak-nocontentpadding')
 		.evaluate(function () {
-			var items = [];
-			var itemo;
+			var type = $('div.ak-encyclo-detail-right.ak-nocontentpadding').find('div.ak-encyclo-detail-type.col-xs-6').find('span').text().trim();
+			var name = $('h1.ak-return-link').text().trim();
+			var description = $('div.ak-encyclo-detail-right.ak-nocontentpadding').find('div.ak-container.ak-panel:first').find('div.ak-panel-content').text().trim();
+			var lvl = $('div.ak-encyclo-detail-right.ak-nocontentpadding').find('div.ak-encyclo-detail-level.col-xs-6.text-right').text().trim().replace(/\D/g,'');
+			var imgUrl = $('div.ak-encyclo-detail-illu').find('img').attr('src');
+			var panoplyUrl = $('div.ak-container.ak-panel.ak-crafts').next('div.ak-container.ak-panel').find('div.ak-panel-title').find('a').attr('href');
+			var item = {
+				name: name,
+				description: description,
+				lvl: lvl,
+				type: type,
+				imgUrl: imgUrl,
+				url: document.URL,
+				panoplyUrl: 'http://www.dofus-touch.com' + panoplyUrl
+			}
+			item["stats"] = [];
 			$('div.ak-encyclo-detail-right.ak-nocontentpadding').find('div.ak-list-element').each(function(i, element){
-				itemo = $(this).find( "div.ak-title" ).text().trim();
-				var item = $(this).find( "div.ak-title" ).text().trim();
-				items.push(item);				
+				item["stats"].push($(this).find( "div.ak-title" ).text().trim());
 			});
-			//links.shift();
-			//console.log(items);
-			return items;
+			return item;
 		})
 		//.log()
 		.then((htmlRes) => {
@@ -51,7 +58,7 @@ function getData(url) {
 }
 
 function getLinksFromFile() {
-	var jsonFile = fs.readFileSync("links.json", "utf8");
+	var jsonFile = fs.readFileSync("links2.json", "utf8");
 	obj = JSON.parse(jsonFile);
 	return obj;
 }

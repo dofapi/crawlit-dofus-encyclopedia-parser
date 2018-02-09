@@ -1,19 +1,24 @@
 var Horseman = require("node-horseman");
 var fs = require('fs');
 var Promise = require('bluebird');
-var gi = require('./getItems');
+//var gi = require('./getItems');
 
-crawl();
+process.argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+//crawl();
 
 
 function crawl() {
 	var crawlers = [];
-	for (var page = 1; page <= 2; page++) {
+	for (var page = 1; page <= 12; page++) {
 		crawlers.push(getData(page));
 	}
 	Promise.all(crawlers).then(values => { 
-		fs.appendFileSync('links.json', JSON.stringify(values), 'utf8');
-		gi.getItems();
+		var result = concatToOneArray(values);
+		console.log(result);
+		fs.appendFileSync('amuletUrl.json', JSON.stringify(result), 'utf8');
+		//gi.getItems();
 	});
 }
 
@@ -22,7 +27,7 @@ function getData(page) {
 		new Horseman({
 			injectJquery: true
 		})
-		.open('http://www.dofus-touch.com/fr/mmorpg/encyclopedie/equipements' + '?page=' + page)
+		.open('http://www.dofus-touch.com/fr/mmorpg/encyclopedie/equipements?text=&type_id[0]=1&' + 'page=' + page)
 		.html('tbody')
 		.evaluate(function () {
 			var links = [];
@@ -31,13 +36,22 @@ function getData(page) {
 				links.push(link);				
 			});
 			links.shift();
-			console.log(links);
+			//console.log(links);
 			return links;
 		})
-		.log()
+		//.log()
 		.then((htmlRes) => {
 			resolve(htmlRes);
 		})
 		.close();
 	});	
+}
+
+function concatToOneArray(arrToConvert) {
+	var newArr = [];
+	for(var i = 0; i < arrToConvert.length; i++)
+	{
+		newArr = newArr.concat(arrToConvert[i]);
+	}
+	return newArr;
 }
