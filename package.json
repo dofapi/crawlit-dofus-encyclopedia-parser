@@ -13,7 +13,6 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "clui": "^0.3.6",
-    "figlet": "^1.2.0",
     "fs": "0.0.1-security",
     "fs-path": "0.0.23",
     "inquirer": "^5.1.0"
@@ -22,5 +21,10 @@
     "bluebird": "^3.5.1",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
+  },
+  "pkg": {
+    "targets": [
+      "node8"
+    ]
   }
 }
