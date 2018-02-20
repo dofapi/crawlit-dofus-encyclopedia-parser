@@ -13,12 +13,10 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "clui": "^0.3.6",
-    "express": "^4.16.2",
     "figlet": "^1.2.0",
     "fs": "0.0.1-security",
     "fs-path": "0.0.23",
-    "inquirer": "^5.1.0",
-    "jquery": "^3.3.1"
+    "inquirer": "^5.1.0"
   },
   "devDependencies": {
     "bluebird": "^3.5.1",
