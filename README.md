@@ -56,13 +56,13 @@ Crawlit is build with full javascript : [NodeJs/Npm](https://nodejs.org/en/), ja
 
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/node-js.png)
 
-## Bug & Crash | Proposal ?
-Don't hesitate to create an issue.
+## Bug & Crash || Proposal ?
+For proposal don't hesitate to create a pool request or for a bug/crash an issue. You can also make us aware on [bugs channel in discord](https://discord.gg/r6nEaHp).
 
 ## Discord
-Coming soon !
+[Click here to join the sosnoob community on discord !](https://discord.gg/8rKmXDd)
 
-![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg)
+[<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/8rKmXDd)
 
 ## Join the dev Team ?
-Coming soon !
+[Contact us on discord](https://discord.gg/8rKmXDd) (channel general or private message to theukid)
