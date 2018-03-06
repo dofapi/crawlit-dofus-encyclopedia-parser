@@ -1,7 +1,7 @@
 {
   "name": "crawlit",
   "version": "1.0.0",
-  "description": "Crawl dofus encyclopedia",
+  "description": "Crawl dofus encyclopedia ",
   "main": "lib/app.js",
   "bin": "lib/app.js",
   "scripts": {
