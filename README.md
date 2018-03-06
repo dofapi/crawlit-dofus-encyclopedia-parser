@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-# Crawlit - Dofus encyclopedia parser
+# Crawlit - Dofus encyclopedia parser - Build your own Dofus API
 
 In order to respond to a need expressed by the community, I create an encyclopedia parser for `Dofus` available for : </br>
 - `Windows`
