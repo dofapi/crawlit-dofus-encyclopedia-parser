@@ -64,5 +64,9 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 
 [<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/8rKmXDd)
 
+
+## Documentation(dev)
+[Access the wiki to understand the project and contribute to it](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(English)). [There is also a french version of the documentation](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(Français)) :smiley: ! 
+
 ## Join the dev Team ?
 [Contact us on discord](https://discord.gg/8rKmXDd) (channel general or private message to theukid)
