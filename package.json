@@ -6,9 +6,10 @@
   "bin": "lib/app.js",
   "scripts": {
     "start": "node lib/app.js",
-    "pkg-linux": "pkg -t latest-linux-x64 -o ./crawlito lib/app.js",
-    "pkg-mac": "pkg -t latest-macos-x64 -o ./app ./lib/app.js",
-    "pkg-all": "pkg . --targets=macos-x64,linux-armv7",
+    "pkg-win": "pkg . --targets=win-x64",
+    "pkg-linux": "pkg . --targets=linux-x64",
+    "pkg-mac": "pkg . --targets=macos-x64",
+    "pkg-all": "pkg . --targets=macos-x64,linux-x64,win-x64",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kaido",
