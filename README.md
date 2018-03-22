@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-# Crawlit - Dofus encyclopedia parser - Build your own Dofus API
+# Crawlit - Dofus & Dofus-Touch encyclopedia parser - Build your own Dofus API
 
 In order to respond to a need expressed by the community, I create an encyclopedia parser for `Dofus` available for : </br>
 - `Windows`
@@ -18,7 +18,7 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light full
 - Simple to use | Plug and use
-- English & French encyclopedia supported
+- English & French encyclopedia supported (french item & english item)
 
 App launched           |  App at the end
 :-------------------------:|:-------------------------:
@@ -56,13 +56,13 @@ Crawlit is build with full javascript : [NodeJs/Npm](https://nodejs.org/en/), ja
 
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/node-js.png)
 
-## Bug & Crash | Proposal ?
-Don't hesitate to create an issue.
+## Bug & Crash || Proposal ?
+For proposal don't hesitate to create a pool request or for a bug/crash an issue. You can also make us aware on [bugs channel in discord](https://discord.gg/r6nEaHp).
 
 ## Discord
-Coming soon !
+[Click here to join the sosnoob community on discord !](https://discord.gg/8rKmXDd)
 
-![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg)
+[<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/8rKmXDd)
 
 ## Join the dev Team ?
-Coming soon !
+[Contact us on discord](https://discord.gg/8rKmXDd) (channel general or private message to theukid)
