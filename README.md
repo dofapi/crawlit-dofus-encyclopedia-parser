@@ -1,5 +1,10 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 # <a href="url"><img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/favicon.ico" align="left" height="50" width="50" ></a>Crawlit - Dofus & Dofus-Touch encyclopedia parser - Build your own Dofus API 
+[![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buildwithlove.png)](https://sosnoob.com)
+[![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buymecoffee.png)](https://sosnoob.com)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
 In order to respond to a need expressed by the community, I create an encyclopedia parser for `Dofus` available for : </br>
 - `Windows`
 - `OSX` 
@@ -17,6 +22,7 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light full
 - Simple to use | Plug and use
+- App package into **executable**, no need to install something
 - English & French encyclopedia supported (french item & english item)
 
 App launched           |  App at the end
@@ -49,6 +55,22 @@ An item result example
 
 ## App usage example
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit_API.gif)
+
+## Supported items
+| Items       | state of progress        |
+| ------------- |:-------------|
+| `Equipment`     | 100 %  |
+| `Weapon`    | 100 % |
+| `Set` | 100 % |
+| `Pet` | 100 % |
+| `Mount` | 100 % |
+| `Resource` | 100 % |
+| `Consumable` | 100 % |
+| `Recipe` | 25 % |
+| `Classe` | 0 % |
+
+## We also have done an API !
+Visite the official non-official Dofus API : **[DOFAPI](https://dofapi.fr)**
 
 ## Technologies choice
 Crawlit is build with full javascript : [NodeJs/Npm](https://nodejs.org/en/), javascript.
