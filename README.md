@@ -23,7 +23,8 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light full
 - Simple to use | Plug and use
-- App package into **executable**, no need to install something
+- Resume parsing feature after 429 error (too many request)
+- App packaged into **executable**, no need to install something
 - English & French encyclopedia supported (french item & english item)
 
 App launched           |  App at the end
