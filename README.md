@@ -96,6 +96,5 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 
 ## Contributors
 
-[<img alt="Zakaria RACHEDI" src="https://avatars2.githubusercontent.com/u/9281021?v=3&s=117" width="117">](https://github.com/raczak) |
-:---:
-|[Zakaria RACHEDI](https://github.com/raczak)|
+| [<img src="https://avatars2.githubusercontent.com/u/9281021?v=3&s=117" width="117px;"/><br /><sub><b>Zakaria RACHEDI</b></sub>](https://github.com/raczak) | [<img src="https://avatars0.githubusercontent.com/u/17069089?v=3&s=117" width="117px;"/><br /><sub><b>Le Corre Julien</b></sub>](https://github.com/Edoz77) |
+| :---: | :---: |
