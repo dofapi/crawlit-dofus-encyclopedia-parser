@@ -93,3 +93,9 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 
 ## Join the dev Team ?
 [Contact us on discord](https://discord.gg/8rKmXDd) (channel general or private message to theukid)
+
+## Contributors
+
+[<img alt="Zakaria RACHEDI" src="https://avatars2.githubusercontent.com/u/9281021?v=3&s=117" width="117">](https://github.com/raczak) |
+:---:
+|[Zakaria RACHEDI](https://github.com/raczak)|
