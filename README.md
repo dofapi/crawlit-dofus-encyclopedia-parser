@@ -14,22 +14,22 @@ In order to respond to a need expressed by the community, I create an encycloped
 **Download** : [All versions are available here](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/releases)
 
 
-**:warning: Don't use the tool for more than 20 pages per hour**
+**:warning: Don't use the tool for more than 700 items per hour** (for Dofus-Touch).
 
-Crawlit was built to be very light full, it can run on almost every configurations.
+Crawlit was built to be very light, it can run on almost every configurations.
 
 In fact Crawlit is a tool :
 
 - Developed by the dofus community, for the community
-- **100% performance** : Developed to be very light full
+- **100% performance** : Developed to be very light
 - Simple to use | Plug and use
-- Resume parsing feature after 429 error (too many request)
+- Resume parsing feature after errors (connection off / 429 error / ...)
 - App packaged into **executable**, no need to install something
 - English & French encyclopedia supported (french item & english item)
 
 App launched           |  App at the end
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit1.JPG)  |  ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit6.JPG)
+![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit_API.gif)  |  ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit6.JPG)
 
 ## JSON files also provided in the repository
 In case you wan't directly the dofus JSON files, I oftenly upload up-to-date encyclopedia JSON in the `data/` folder.
@@ -55,8 +55,32 @@ An item result example
 }
 ```
 
-## App usage example
-![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit_API.gif)
+## Getting Started
+
+Clone & access this repository locally :
+
+``` bash
+git clone https://github.com/raczak/crawlit-dofus-encyclopedia-parser.git
+cd crawlit-dofus-encyclopedia-parser
+```
+
+Install dependencies with npm :
+
+``` bash
+npm install
+```
+
+**:warning: There is an issue with `npm start` on some CLI, in this case prefere use `node lib/app.js`.**
+
+### [Optional] To build packaged app
+
+If you want to generate packaged app (executable) with `pkg` dependency, you **MUST** install `zeit/pkg` in npm global context.  
+Please follow [Pkg documentation](https://github.com/zeit/pkg) for troubleshooting.
+
+``` bash
+npm install -g pkg
+```
+- **in a terminal window** -> `npm run pkg-all` 
 
 ## Supported items
 | Items       | state of progress        |
