@@ -6,5 +6,5 @@
 .DS_Store
 .vscode
 crawlit-win.exe
-crawlit-linux.exe
-crawlit-mac.exe
+crawlit-linux
+crawlit-macos
