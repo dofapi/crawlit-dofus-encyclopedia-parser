@@ -10,7 +10,7 @@
     "pkg-linux": "pkg . --targets=linux-x64",
     "pkg-mac": "pkg . --targets=macos-x64",
     "pkg-all": "pkg . --targets=macos-x64,linux-x64,win-x64",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "kaido",
   "license": "ISC",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "bluebird": "^3.5.1",
+    "jest": "^22.4.3",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },
