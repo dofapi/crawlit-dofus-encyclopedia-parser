@@ -38,7 +38,7 @@ In case you wan't directly the dofus JSON files, I oftenly upload up-to-date enc
 An item result example
 ```json
 {  
-  "item_identifiant":"item ID",
+  "_id":"item ID",
   "name":"item name",
   "description":"item description.",
   "lvl":"item lvl",
