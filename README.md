@@ -48,9 +48,8 @@ An item result example
   "stats":[ "many statistics line", "stat 2", ["..."], "stat n" ],
   "condition":[ "many conditions line", "condition 2", ["..."], "condition n" ],
   "set":{  
-     "id":"set ID in order to link it with items (relation : one to many)",
-     "url":"set url",
-     "name":"set name"
+     "equipments":[itemId, itemId ...],
+     "weapons":[itemId, itemId ...],
   }
 }
 ```
