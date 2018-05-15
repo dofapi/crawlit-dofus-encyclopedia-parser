@@ -93,6 +93,8 @@ npm install -g pkg
 | `Consumable` | 100 % |
 | `Recipe` | 25 % |
 | `Classe` | 0 % |
+| `Professions` | 0 % |
+| `Bestiary` | 0 % |
 
 ## We also have done an API !
 Visite the official non-official Dofus API : **[DOFAPI](https://dofapi.fr)**
