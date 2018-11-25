@@ -1,7 +1,12 @@
 {
-  "name": "crawlit",
-  "version": "1.3.2",
+  "name": "@sosnoob/crawlit",
+  "version": "1.3.3",
+  "homepage": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser",
   "description": "Crawl structured dofus encyclopedia data and build your own app/API",
+  "author": {
+    "name": "Zakaria Rachedi",
+    "url": "https://github.com/raczak"
+  },
   "main": "lib/app.js",
   "bin": "lib/app.js",
   "scripts": {
@@ -12,8 +17,30 @@
     "pkg-all": "pkg . --targets=macos-x64,linux-x64,win-x64",
     "test": "jest"
   },
-  "author": "kaido",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/raczak/crawlit-dofus-encyclopedia-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser/issues"
+  },
+  "licenses": [
+    {
+      "type": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "dofus",
+    "dofus-touch",
+    "api",
+    "dofus api",
+    "dofus-touch api",
+    "dofus item",
+    "crawlit",
+    "dofapi",
+    "sosnoob"
+  ],
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "clui": "^0.3.6",
