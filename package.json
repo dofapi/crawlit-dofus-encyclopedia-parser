@@ -1,6 +1,6 @@
 {
   "name": "@sosnoob/crawlit",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "homepage": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser",
   "description": "Crawl structured dofus encyclopedia data and build your own app/API",
   "author": {
