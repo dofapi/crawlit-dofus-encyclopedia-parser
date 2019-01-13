@@ -14,7 +14,7 @@ In order to respond to a need expressed by the community, I create an encycloped
 **Download** : [All versions are available here](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/releases)
 
 
-**:warning: Don't use the tool for more than 700 items per hour** (for Dofus-Touch).
+**:warning: Because of new parsing method : 429 error limitation removed, You can  parse as long as you want**
 
 Crawlit was built to be very light, it can run on almost every configurations.
 
@@ -23,6 +23,7 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light
 - Simple to use | Plug and use
+- Json file & MongoDB importable file generated
 - Resume parsing feature after errors (connection off / 429 error / ...)
 - App packaged into **executable**, no need to install something
 - English & French encyclopedia supported (french item & english item)
