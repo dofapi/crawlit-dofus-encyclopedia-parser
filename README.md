@@ -14,7 +14,7 @@ In order to respond to a need expressed by the community, I create an encycloped
 **Download** : [All versions are available here](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/releases)
 
 
-**:warning: Don't use the tool for more than 700 items per hour** (for Dofus-Touch).
+**:warning: Because of new parsing method : 429 error limitation removed, You can  parse as long as you want**
 
 Crawlit was built to be very light, it can run on almost every configurations.
 
@@ -23,6 +23,7 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light
 - Simple to use | Plug and use
+- Json file & MongoDB importable file generated
 - Resume parsing feature after errors (connection off / 429 error / ...)
 - App packaged into **executable**, no need to install something
 - English & French encyclopedia supported (french item & english item)
@@ -108,16 +109,16 @@ Crawlit is build with full javascript : [NodeJs/Npm](https://nodejs.org/en/), ja
 For proposal don't hesitate to create a pool request or for a bug/crash an issue. You can also make us aware on [bugs channel in discord](https://discord.gg/r6nEaHp).
 
 ## Discord
-[Click here to join the sosnoob community on discord !](https://discord.gg/8rKmXDd)
+[Click here to join the sosnoob community on discord !](https://discord.gg/vga628q)
 
-[<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/8rKmXDd)
+[<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/vga628q)
 
 
 ## Documentation(dev)
 [Access the wiki to understand the project and contribute to it](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(English)). [There is also a french version of the documentation](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(Français)) :smiley: ! 
 
 ## Join the dev Team ?
-[Contact us on discord](https://discord.gg/8rKmXDd) (channel general or private message to theukid)
+[Contact us on discord](https://discord.gg/vga628q) (channel general or private message to theukid)
 
 ## Contributors
 
