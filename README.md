@@ -92,9 +92,9 @@ npm install -g pkg
 | `Mount` | 100 % |
 | `Resource` | 100 % |
 | `Consumable` | 100 % |
+| `Professions` | 100 % |
 | `Recipe` | 25 % |
 | `Classe` | 0 % |
-| `Professions` | 0 % |
 | `Bestiary` | 0 % |
 
 ## We also have done an API !
@@ -122,5 +122,5 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 
 ## Contributors
 
-| [<img src="https://avatars2.githubusercontent.com/u/9281021?v=3&s=117" width="117px;"/><br /><sub><b>Zakaria RACHEDI</b></sub>](https://github.com/raczak) | [<img src="https://avatars0.githubusercontent.com/u/17069089?v=3&s=117" width="117px;"/><br /><sub><b>Le Corre Julien</b></sub>](https://github.com/Edoz77) | [<img src="https://avatars2.githubusercontent.com/u/24317552?v=3&s=117" width="117px;"/><br /><sub><b>Yannick Milanetto</b></sub>](https://github.com/yannick-milanetto)
-| :---: | :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/9281021?v=3&s=117" width="117px;"/><br /><sub><b>Zakaria RACHEDI</b></sub>](https://github.com/raczak) | [<img src="https://avatars0.githubusercontent.com/u/17069089?v=3&s=117" width="117px;"/><br /><sub><b>Le Corre Julien</b></sub>](https://github.com/Edoz77) | [<img src="https://avatars2.githubusercontent.com/u/24317552?v=3&s=117" width="117px;"/><br /><sub><b>Yannick Milanetto</b></sub>](https://github.com/yannick-milanetto) | [<img src="https://avatars0.githubusercontent.com/u/22028659?s=117&v=3" width="117px;"/><br /><sub><b>Darkilen</b></sub>](https://github.com/Darkilen)
+| :---: | :---: | :---: | :---: |
