@@ -1,3 +1,4 @@
+
 # <a href="url"><img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/favicon.ico" align="left" height="50" width="50" ></a>Crawlit - Dofus & Dofus-Touch encyclopedia parser - Build your own Dofus API 
 [![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buildwithlove.png)](https://www.sosnoob.com)
 [![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buymecoffee.png)](https://www.paypal.me/sosnoob)
@@ -23,14 +24,31 @@ In fact Crawlit is a tool :
 - Developed by the dofus community, for the community
 - **100% performance** : Developed to be very light
 - Simple to use | Plug and use
-- Json file & MongoDB importable file generated
+- [Interactive prompt](#interactive-prompt) & [Command prompt](#command-line-prompt)
+- [Json file & MongoDB importable file generated](#json-files-also-provided-in-the-repository)
 - Resume parsing feature after errors (connection off / 429 error / ...)
-- App packaged into **executable**, no need to install something
+- [App packaged into **executable**, no need to install something](#optional-to-build-packaged-app)
 - English & French encyclopedia supported (french item & english item)
+
+## Interactive prompt
 
 App launched           |  App at the end
 :-------------------------:|:-------------------------:
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit_API.gif)  |  ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit6.JPG)
+
+## Command line prompt
+**You can run the program with those parameter (all lowercase):  
+Required :**  
+`-g, --game - dofus` or `dofus-touch ` 
+`-l, --language - english` or `french`
+`-c, --category - Name` of a category
+
+**Required one of them :**  
+`-a, --all`
+`-m, --maxItem - Integer` greater or equal than 0
+
+**Optional :**  
+`-h, --help` - Show the help
 
 ## JSON files also provided in the repository
 In case you wan't directly the dofus JSON files, I oftenly upload up-to-date encyclopedia JSON in the `data/` folder.
@@ -95,7 +113,11 @@ npm install -g pkg
 | `Professions` | 100 % |
 | `Recipe` | 25 % |
 | `Classe` | 0 % |
-| `Bestiary` | 0 % |
+| `Bestiary` | 15 % |
+| `Harnesse` | 0 % |
+| `Idol` | 0 % |
+| `Sidekick` | 0 % |
+| `Haven Bag` | 0 % |
 
 ## We also have done an API !
 Visite the official non-official Dofus API : **[DOFAPI](https://dofapi.fr)**
@@ -114,8 +136,10 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 [<img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/discord-Logo.jpg">](https://discord.gg/vga628q)
 
 
-## Documentation(dev)
-[Access the wiki to understand the project and contribute to it](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(English)). [There is also a french version of the documentation](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(Français)) :smiley: ! 
+## Documentation if you want to contribute (dev)
+**English Version :** [Access the wiki to understand the project and contribute to it](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(English)). 
+
+**French Version :** [There is also a french version of the documentation](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(Français)) :smiley: ! 
 
 ## Join the dev Team ?
 [Contact us on discord](https://discord.gg/vga628q) (channel general or private message to theukid)
