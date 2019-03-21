@@ -37,18 +37,23 @@ App launched           |  App at the end
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit_API.gif)  |  ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit6.JPG)
 
 ## Command line prompt
-**You can run the program with those parameter (all lowercase):  
-Required :**  
-`-g, --game - dofus` or `dofus-touch ` 
-`-l, --language - english` or `french`
-`-c, --category - Name` of a category
+**You can run the program with those parameter (all lowercase):**
 
-**Required one of them :**  
-`-a, --all`
-`-m, --maxItem - Integer` greater or equal than 0
 
-**Optional :**  
-`-h, --help` - Show the help
+|Argument| Alias        |   Value  |
+|:------:|:------------:|:---------|
+| `-g`   | `--game`     | `dofus` or `dofus-touch`
+| `-l`   | `--language` | `french` or `english`
+| `-c`   | `--category` | `categoryName` ([see list of categories](#supported-items))
+| `-a` or `-m`    | `--all` for `-a` or `--maxItem` for `-m`     | `Number` for `-m/--maxItem` (Amount of item you want)
+| `-h`   | `--help`     |
+
+**Example :** ```node ./lib/app.js --game dofus-touch --language english --category monster --maxItem 5```
+
+**:warning: If you want all equipments or all weapons :** `-category` argument's value must be written like `allequipments` and `allweapons`. 
+
+Example : ```node ./lib/app.js --game dofus-touch --language english --category allequipments --all```
+
 
 ## JSON files also provided in the repository
 In case you wan't directly the dofus JSON files, I oftenly upload up-to-date encyclopedia JSON in the `data/` folder.
@@ -82,12 +87,16 @@ git clone https://github.com/raczak/crawlit-dofus-encyclopedia-parser.git
 cd crawlit-dofus-encyclopedia-parser
 ```
 
-Install dependencies with npm :
+**1) Install dependencies with npm :**
 
 ``` bash
 npm install
 ```
+**2) Then at the root folder launch the programm with npm or node :**
 
+``` bash
+npm start
+```
 **:warning: There is an issue with `npm start` on some CLI, in this case prefere use `node lib/app.js`.**
 
 ### [Optional] To build packaged app
@@ -95,10 +104,14 @@ npm install
 If you want to generate packaged app (executable) with `pkg` dependency, you **MUST** install `zeit/pkg` in npm global context.  
 Please follow [Pkg documentation](https://github.com/zeit/pkg) for troubleshooting.
 
+**1) Install pkg package from npm repository**
 ``` bash
 npm install -g pkg
 ```
-- **in a terminal window** -> `npm run pkg-all` 
+**2) Then in a terminal window**
+``` bash
+npm run pkg-all
+```
 
 ## Supported items
 | Items       | state of progress        |
