@@ -51,7 +51,6 @@
   },
   "devDependencies": {
     "bluebird": "^3.5.1",
-    "jest": "^23.6.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
