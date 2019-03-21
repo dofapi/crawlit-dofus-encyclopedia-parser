@@ -50,9 +50,9 @@
     "inquirer": "^5.1.0"
   },
   "devDependencies": {
-    "bluebird": "^3.5.1",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "bluebird": "3.5.3",
+    "request": "2.88.0",
+    "request-promise": "4.2.2"
   },
   "pkg": {
     "targets": [
