@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "bluebird": "3.5.3",
+    "eslint": "^5.15.3",
     "request": "2.88.0",
     "request-promise": "4.2.4"
   },
