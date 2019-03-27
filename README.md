@@ -154,13 +154,13 @@ For proposal don't hesitate to create a pool request or for a bug/crash an issue
 
 **French Version :** [There is also a french version of the documentation](https://github.com/raczak/crawlit-dofus-encyclopedia-parser/wiki/Dev-Documentation-(Français)) :smiley: ! 
 
+## Join the dev Team ?
+[Contact us on discord](http://discord.dofapi.fr) (channel general or private message to theukid)
+
 ## Project sponsors
 <a href="https://www.digitalocean.com/">
   <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="20%" height="50">
 </a>
-
-## Join the dev Team ?
-[Contact us on discord](http://discord.dofapi.fr) (channel general or private message to theukid)
 
 ## Contributors
 
