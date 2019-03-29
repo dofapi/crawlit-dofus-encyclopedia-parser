@@ -126,8 +126,8 @@ npm run pkg-all
 | `Professions` | 100 % |
 | `Recipe` | 25 % |
 | `Classe` | 0 % |
-| `Bestiary` | 15 % |
-| `Harnesse` | 0 % |
+| `Bestiary` | 100 % |
+| `Harnesse` | 100 % |
 | `Idol` | 0 % |
 | `Sidekick` | 0 % |
 | `Haven Bag` | 0 % |
