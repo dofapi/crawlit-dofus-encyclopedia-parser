@@ -125,10 +125,10 @@ npm run pkg-all
 | `Consumable` | 100 % |
 | `Professions` | 100 % |
 | `Recipe` | 25 % |
-| `Classe` | 0 % |
+| `Classe` | 100 % |
 | `Bestiary` | 100 % |
 | `Harnesse` | 100 % |
-| `Idol` | 0 % |
+| `Idol` | 100 % |
 | `Sidekick` | 0 % |
 | `Haven Bag` | 0 % |
 
