@@ -1,11 +1,11 @@
 {
-    "name": "@sosnoob/crawlit",
-    "version": "1.3.8",
-    "homepage": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser",
-    "description": "Crawl structured dofus encyclopedia data and build your own app/API",
+    "name": "@dofapi/crawlit",
+    "version": "1.3.9",
+    "homepage": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser",
+    "description": "Crawl structured dofus encyclopedia data to populate the Dofapi app & API",
     "author": {
         "name": "Zakaria Rachedi",
-        "url": "https://github.com/dofapi"
+        "url": "https://github.com/raczak"
     },
     "main": "lib/app.js",
     "bin": "lib/app.js",
@@ -14,24 +14,20 @@
         "prestart": "npm run -s build",
         "dev": "node lib/app.js",
         "clean": "rm -R ./dist ./data",
-        "pkg-win": "pkg . --targets=win-x64",
-        "pkg-linux": "pkg . --targets=linux-x64",
-        "pkg-mac": "pkg . --targets=macos-x64",
-        "pkg-all": "pkg . --targets=macos-x64,linux-x64,win-x64",
         "build": "babel --presets es2015 --ignore data -d dist/ lib",
         "test": "jest"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/raczak/crawlit-dofus-encyclopedia-parser.git"
+        "url": "git://github.com/dofapi/crawlit-dofus-encyclopedia-parser.git"
     },
     "bugs": {
-        "url": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser/issues"
+        "url": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser/issues"
     },
     "licenses": [
         {
             "type": "CC BY-NC-SA 4.0",
-            "url": "https://github.com/raczak/crawlit-dofus-encyclopedia-parser/blob/master/LICENSE"
+            "url": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser/blob/master/LICENSE"
         }
     ],
     "keywords": [
@@ -59,10 +55,5 @@
         "eslint": "^5.15.3",
         "request": "2.88.0",
         "request-promise-native": "^1.0.7"
-    },
-    "pkg": {
-        "targets": [
-            "node8"
-        ]
     }
 }

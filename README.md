@@ -99,19 +99,6 @@ npm start
 ```
 **:warning: There is an issue with `npm start` on some CLI, in this case prefere use `node lib/app.js`.**
 
-### [Optional] To build packaged app
-
-If you want to generate packaged app (executable) with `pkg` dependency, you **MUST** install `zeit/pkg` in npm global context.  
-Please follow [Pkg documentation](https://github.com/zeit/pkg) for troubleshooting.
-
-**1) Install pkg package from npm repository**
-``` bash
-npm install -g pkg
-```
-**2) Then in a terminal window**
-``` bash
-npm run pkg-all
-```
 
 ## Supported items
 | Items       | state of progress        |
