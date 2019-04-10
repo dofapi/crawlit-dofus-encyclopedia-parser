@@ -14,6 +14,7 @@
         "prestart": "npm run -s build",
         "dev": "node lib/app.js",
         "clean": "rm -R ./dist ./data",
+        "clean-win": "rmdir dist /s & rmdir data /s",
         "build": "babel --presets es2015 --ignore data -d dist/ lib",
         "test": "jest"
     },
