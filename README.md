@@ -1,7 +1,7 @@
 
 # <a href="url"><img src="https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/crawlit.png" align="left" height="50" width="50" ></a>Crawlit - Dofus & Dofus-Touch encyclopedia parser - Build your own Dofus API 
 [![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buildwithlove.png)](https://www.sosnoob.com)
-[![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buymecoffee.png)](https://www.paypal.me/sosnoob)
+[![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buymecoffee.png)](https://www.buymeacoffee.com/8kdCnjZxH)
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
