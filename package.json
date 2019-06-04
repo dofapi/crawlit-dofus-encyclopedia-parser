@@ -1,6 +1,6 @@
 {
     "name": "@dofapi/crawlit",
-    "version": "1.3.9",
+    "version": "1.3.10",
     "homepage": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser",
     "description": "Crawl structured dofus encyclopedia data to populate the Dofapi app & API",
     "author": {
@@ -13,6 +13,7 @@
         "start": "node dist/app.js",
         "prestart": "npm run -s build",
         "dev": "node lib/app.js",
+        "crawlit": "npm run -s build",
         "clean": "rm -R ./dist ./data",
         "clean-win": "rmdir dist data /s /q",
         "build": "babel --presets es2015 --ignore data -d dist/ lib",

@@ -48,11 +48,11 @@ App launched           |  App at the end
 | `-a` or `-m`    | `--all` for `-a` or `--maxItem` for `-m`     | `Number` for `-m/--maxItem` (Amount of item you want)
 | `-h`   | `--help`     |
 
-**Example :** ```node ./lib/app.js --game dofus-touch --language english --category monster --maxItem 5```
+**Example :** ```npm run crawlit && node ./dist/app.js --game dofus-touch --language english --category monster --maxItem 5```
 
 **:warning: If you want all equipments or all weapons :** `-category` argument's value must be written like `allequipments` and `allweapons`. 
 
-Example : ```node ./lib/app.js --game dofus-touch --language english --category allequipments --all```
+Example : ```npm run crawlit && node ./dist/app.js --game dofus-touch --language english --category allequipments --all```
 
 
 ## JSON files also provided in the repository
