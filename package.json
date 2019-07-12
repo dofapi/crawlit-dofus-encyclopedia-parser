@@ -1,6 +1,6 @@
 {
     "name": "@dofapi/crawlit",
-    "version": "1.3.10",
+    "version": "1.4.10",
     "homepage": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser",
     "description": "Crawl structured dofus encyclopedia data to populate the Dofapi app & API",
     "author": {
@@ -16,7 +16,7 @@
         "crawlit": "npm run -s build",
         "clean": "rm -R ./dist ./data",
         "clean-win": "rmdir dist data /s /q",
-        "build": "babel --presets es2015 --ignore data -d dist/ lib",
+        "build": "babel --presets @babel/preset-env --ignore data -d dist/ lib",
         "test": "jest"
     },
     "repository": {
@@ -47,13 +47,16 @@
         "cheerio": "^1.0.0-rc.2",
         "clui": "^0.3.6",
         "commander": "^2.19.0",
-        "inquirer": "^5.1.0"
+        "inquirer": "^5.1.0",
+        "request-promise-native": "^1.0.7",
+        "request": "^2.88.0"
     },
     "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-preset-es2015": "^6.24.1",
-        "eslint": "^5.15.3",
-        "request": "2.88.0",
-        "request-promise-native": "^1.0.7"
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.0.0",
+        "@babel/plugin-transform-runtime": "^7.5.0",
+        "@babel/preset-env": "^7.5.4",
+        "@babel/runtime": "^7.5.4",
+        "eslint": "^5.15.3"
     }
 }
