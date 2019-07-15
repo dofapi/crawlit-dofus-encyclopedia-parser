@@ -62,7 +62,7 @@ In case you wan't directly the dofus JSON files, I oftenly upload up-to-date enc
 An item result example
 ```json
 {  
-  "_id":"null : represent yourdb id",
+  "_id":"null : represent your db id",
   "ankamaId": "item id",
   "name":"item name",
   "description":"item description.",
