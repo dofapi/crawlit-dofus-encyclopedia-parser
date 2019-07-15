@@ -27,8 +27,8 @@ In fact Crawlit is a tool :
 - [Interactive prompt](#interactive-prompt) & [Command prompt](#command-line-prompt)
 - [Json file & MongoDB importable file generated](#json-files-also-provided-in-the-repository)
 - Resume parsing feature after errors (connection off / 429 error / ...)
-- [App packaged into **executable**, no need to install something](#optional-to-build-packaged-app)
-- English & French encyclopedia supported (french item & english item)
+- English & French encyclopedia supported (french item, english item and soon all other versions)
+- Full Encyclopedia parse available : just execute the `npm run parse-all` command (be patient)
 
 ## Interactive prompt
 
