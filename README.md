@@ -28,7 +28,7 @@ In fact Crawlit is a tool :
 - [Json file & MongoDB importable file generated](#json-files-also-provided-in-the-repository)
 - Resume parsing feature after errors (connection off / 429 error / ...)
 - English & French encyclopedia supported (french item, english item and soon all other versions)
-- Full Encyclopedia parse available : just execute the `npm run parse-all` command (be patient)
+- Full Encyclopedia parse available : just execute the `npm run parse-all-fr` or `npm run parse-all-en` command (**be patient**)
 
 ## Interactive prompt
 

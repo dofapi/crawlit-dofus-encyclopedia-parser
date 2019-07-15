@@ -1,6 +1,6 @@
 {
     "name": "@dofapi/crawlit",
-    "version": "1.6.12",
+    "version": "1.6.13",
     "homepage": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser",
     "description": "Crawl structured dofus encyclopedia data to populate the Dofapi app & API",
     "author": {
@@ -14,7 +14,8 @@
         "prestart": "npm run -s build",
         "dev": "node lib/app.js",
         "crawlit": "npm run -s build",
-        "parse-all": "sh full-parse.sh",
+        "parse-all-fr": "sh full-parse-fr.sh",
+        "parse-all-en": "sh full-parse-en.sh",
         "clean": "rm -R ./dist ./data",
         "clean-win": "rmdir dist data /s /q",
         "build": "babel --presets @babel/preset-env --ignore data -d dist/ lib",
