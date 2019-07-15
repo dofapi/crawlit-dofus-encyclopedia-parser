@@ -62,7 +62,8 @@ In case you wan't directly the dofus JSON files, I oftenly upload up-to-date enc
 An item result example
 ```json
 {  
-  "_id":"item ID",
+  "_id":"null : represent yourdb id",
+  "ankamaId": "item id",
   "name":"item name",
   "description":"item description.",
   "lvl":"item lvl",
@@ -97,7 +98,7 @@ npm install
 ``` bash
 npm start
 ```
-**:warning: There is an issue with `npm start` on some CLI, in this case prefere use `node lib/app.js`.**
+**:warning: There is an issue with `npm start` on some CLI, in this case prefere use `npm run build && node lib/app.js`.**
 
 
 ## Supported items
@@ -117,7 +118,7 @@ npm start
 | `Harnesse` | 100 % |
 | `Idol` | 100 % |
 | `Sidekick` | 0 % |
-| `Haven Bag` | 0 % |
+| `Haven Bag` | 100 % |
 
 ## We also have done an API !
 Visite the official non-official Dofus API : **[DOFAPI](https://dofapi.fr)**
