@@ -1,6 +1,6 @@
 {
     "name": "@dofapi/crawlit",
-    "version": "1.6.17",
+    "version": "1.6.18",
     "homepage": "https://github.com/dofapi/crawlit-dofus-encyclopedia-parser",
     "description": "Crawl structured dofus encyclopedia data to populate the Dofapi app & API",
     "author": {
